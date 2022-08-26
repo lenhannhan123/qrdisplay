@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+
+<style>
+    .container {
+        background-color: #131313;
+        color: white;
+        padding-bottom: 2rem;
+    }
+    
+    #title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: 50%;
+    }
+    
+    #title-1 {
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    #title-3 {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    
+    #cell {
+        background-color: #222222;
+        border-radius: 30px;
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+    }
+    
+    #cell-1 {
+        background-color: #ffffff;
+        border-radius: 30px;
+        padding: 0.5rem;
+        padding-left: 2rem;
+        font-size: 2rem;
+        color: black;
+    }
+    
+    #arrow-down {
+        text-align: center;
+        animation: myfirst 1s infinite;
+    }
+    
+    @keyframes myfirst {
+        0% {
+            top: 0px;
+        }
+        50% {
+            top: 20px;
+        }
+        100% {
+            top: 0px;
+        }
+    }
+    
+    #top-up {
+        font-size: 3rem;
+        cursor: pointer;
+        position: fixed;
+        z-index: 9999;
+        color: #fcfcfc;
+        bottom: 20px;
+        right: 15px;
+        display: none;
+    }
+    
+    #top-up:hover {
+        color: #333
+    }
+</style>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="image/logokhareer12.png" style="width:8rem" alt="" srcset="">
+            </div>
+        </div>
+
+        <div class="row" data-aos="zoom-in-down">
+            <div class="col" id="title">
+                <div>Xin chào các bạn</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col" id="title-1" data-aos="zoom-in-down">
+                <div>Cho tụi mình xin ít phút nhé !</div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top:10%;">
+
+        </div>
+
+
+        <div class="row" data-aos="zoom-in-down">
+            <div class="col" id="arrow-down">
+
+                <div>
+                    <a href="#logo" style="color: white;">
+                        <i style="font-size:20pt" class="fas fa-angle-down"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row" style="margin-top:50%">
+
+        </div>
+        <div id="logo">.</div>
+        <div style="margin-top:50% ;">
+
+        </div>
+
+        <div class="row">
+
+
+            <div class="col-sm-1" data-aos="zoom-out-right" style="width:11rem;margin: 0px auto; ">
+                <a href="#Khareer">
+                    <div id="cell" style="color: white; text-decoration:none">
+                        <img src="image/logokhareer12.png" style="width:5.5rem;background-color: #222222;margin-left: 20%;" alt="" srcset="">
+                        <br/>
+                        <br/>
+                        <div style="text-align: center; font-size: 1rem;   background-color: #222222;">
+                            Khareer
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-sm-1" data-aos="zoom-out-left" style="width:11rem;margin: 0px auto; ">
+                <a href="#Sharing">
+                    <div id="cell" style="color: white; text-decoration:none">
+                        <img src="image/logokhareer12.png" style="width:5.5rem; margin-left: 20%; background-color: #222222;" alt="" srcset="">
+                        <br/>
+                        <br/>
+                        <div style="text-align: center; font-size: 1rem;   background-color: #222222;">
+                            Sharing
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+        </div>
+        <br>
+        <br>
+
+        <div class="row">
+
+
+            <div class="col-sm-1" data-aos="zoom-out-right" style="width:11rem;margin: 0px auto; ">
+                <a href="#svit">
+                    <div id="cell" style="color: white; text-decoration:none">
+                        <br/>
+                        <img src="image/svit.png" style="width:5.5rem;background-color: #222222;margin-left: 20%;" alt="" srcset="">
+                        <br/>
+                        <br/>
+
+                        <div style="text-align: center; font-size: 1rem;   background-color: #222222;">
+                            SViT
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-sm-1" data-aos="zoom-out-left" style="width:11rem;margin: 0px auto; ">
+                <a href="#meldh">
+                    <div id="cell" style="color: white; text-decoration:none">
+                        <img src="image/meldh.png" style="width:5.5rem; margin-left: 20%; background-color: #222222;" alt="" srcset="">
+                        <br/>
+                        <br/>
+                        <div style="text-align: center; font-size: 1rem;   background-color: #222222;">
+                            MELDH
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="row" style="margin-top:100%;"></div>
+
+
+        <div id="social">
+            <div class="row" data-aos="zoom-in-down">
+                <div class="col" id="title-3">
+                    <div>Mạng xã hội của tụi mình nè !</div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top:5% ;" data-aos="fade-right">
+                <div class="col">
+                    <div id="cell-1">
+                        <div class="row">
+                            <span class="fab fa-facebook"></span>
+                            <span style="font-size: 1rem; margin-left: 5%; margin-right: 18%; margin-top: 1%; ">Khareer - You need we can</span>
+                            <span class="fas fa-angle-right" id="arrow-right"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top:5% ;" data-aos="fade-right">
+                <div class="col">
+                    <div id="cell-1">
+                        <div class="row">
+                            <span class="fab fa-facebook"></span>
+                            <span style="font-size: 1rem; margin-left: 5%; margin-right: 35%; margin-top: 1%; ">Mai em lên đại học</span>
+                            <span class="fas fa-angle-right" id="arrow-right"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top:5% ;" data-aos="fade-right">
+                <div class="col">
+                    <div id="cell-1">
+                        <div class="row">
+                            <span class="fab fa-facebook"></span>
+                            <span style="font-size: 1rem; margin-left: 5%; margin-right:7%; margin-top: 1%; ">SViT - Dịch vụ máy tính sinh viên</span>
+                            <span class="fas fa-angle-right" id="arrow-right"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top:5% ;" data-aos="fade-right">
+                <div class="col">
+                    <div id="cell-1">
+                        <div class="row">
+                            <img src="image/tiktok.png" style="width:2rem" alt="" srcset="">
+                            <span style="font-size: 1rem; margin-left: 5%; margin-right: 20%; margin-top: 1%; ">@khoinghiepcungkhareer</span>
+                            <span class="fas fa-angle-right" id="arrow-right"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top:5% ;" data-aos="fade-right">
+                <div class="col">
+                    <div id="cell-1">
+                        <div class="row">
+                            <img src="image/tiktok.png" style="width:2rem" alt="" srcset="">
+                            <span style="font-size: 1rem; margin-left: 5%; margin-right: 35%; margin-top: 1%; ">@maiemlendaihoc</span>
+                            <span class="fas fa-angle-right" id="arrow-right"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row" style="margin-top:60%;"></div>
+
+
+        <div id="Khareer">
+            <div class="row">
+                <div class="col" style="font-size: 1.8rem;" data-aos="fade-right">
+                    Khareer
+                </div>
+            </div>
+            <br/>
+            <div class="row" data-aos="zoom-in">
+                <div class="col" style="text-align:center;">
+                    <div style="width:90%;margin: 0px auto; ">
+                        Ở Khareer chúng mình cung cấp cho bạn những dịch vụ ở 3 chuyên ngành chính là Marketing , Media, IT
+
+                    </div>
+
+                </div>
+            </div>
+            <br/>
+            <div class="row" data-aos="zoom-in">
+                <div class="col-sm-1" style="width:11rem;margin: 0px auto; ">
+
+                    <img src="image/25.jpg" style="width:7rem;background-color: #222222;margin-left: 20%;" alt="" srcset="">
+
+
+                </div>
+
+
+                <div class="col-sm-1" style="width:11rem;margin: 0px auto; ">
+
+                    <img src="image/27.jpg" style="width:7rem; margin-left: 20%; background-color: #222222;" alt="" srcset="">
+
+                </div>
+            </div>
+            <br>
+            <div class="row" data-aos="zoom-in">
+                <div class="col-sm-1" style="width:11rem;margin: 0px auto; ">
+
+                    <img src="image/34.jpg" style="width:7rem;background-color: #222222;margin-left: 20%;" alt="" srcset="">
+                </div>
+            </div>
+
+            <br>
+            <div class="row" style="margin-top:5% ;" data-aos="fade-right">
+                <div class="col">
+                    <div id="cell-1">
+                        <div class="row">
+                            <i class="fab fa-google"></i>
+                            <span style="font-size: 1rem; margin-left: 5%; margin-right: 35%; margin-top: 1%; ">www.khareer.com</span>
+                            <span class="fas fa-angle-right" id="arrow-right"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="Sharing" style="margin-top: 60%;">
+            <div class="row">
+                <div class="col" style="   font-size: 1.8rem;" data-aos="fade-right">
+                    Sharing
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col" style="text-align:center;">
+                    <div style="width:90%;margin: 0px auto; ">
+                        Ở Sharing, chúng tôi cung cấp cho bạn những khóa học 1 -1 với rất nhiều chuyên ngành và đổi ngũ giảng viên chất lượng
+                    </div>
+
+                </div>
+            </div>
+            <br/>
+            <div class="row" data-aos="zoom-in">
+                <div class="col-sm-1" style="width:11rem;margin: 0px auto; ">
+
+                    <img src="image/25.jpg" style="width:7rem;background-color: #222222;margin-left: 20%;" alt="" srcset="">
+
+
+                </div>
+
+
+                <div class="col-sm-1" style="width:11rem;margin: 0px auto; ">
+
+                    <img src="image/27.jpg" style="width:7rem; margin-left: 20%; background-color: #222222;" alt="" srcset="">
+
+                </div>
+            </div>
+            <br>
+            <div class="row" data-aos="zoom-in">
+                <div class="col-sm-1" style="width:11rem;margin: 0px auto; ">
+
+                    <img src="image/34.jpg" style="width:7rem;background-color: #222222;margin-left: 20%;" alt="" srcset="">
+                </div>
+            </div>
+
+            <br>
+            <div class="row" style="margin-top:5% ;" data-aos="fade-right">
+                <div class="col">
+                    <div id="cell-1">
+                        <div class="row">
+                            <i class="fab fa-google"></i>
+                            <span style="font-size: 1rem; margin-left: 5%; margin-right: 35%; margin-top: 1%; ">www.sharing.com</span>
+                            <span class="fas fa-angle-right" id="arrow-right"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="svit" style="margin-top: 60%;">
+            <div class="row">
+                <div class="col" style=" font-size: 1.8rem;" data-aos="fade-right">
+                    SViT
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col" style="text-align:center;">
+                    <div style="width:90%;margin: 0px auto; ">
+                        Ở SViT, chúng tôi cung cấp cho bạn những dịch vụ sửa chữa, cài đặt phần mềm, mua bán những linh kiện máy tính với giá rẻ
+
+                    </div>
+
+                </div>
+            </div>
+            <br/>
+            <div class="row" data-aos="zoom-in">
+                <div class="col-sm-1" style="width:11rem;margin: 0px auto; ">
+
+                    <img src="image/25.jpg" style="width:7rem;background-color: #222222;margin-left: 20%;" alt="" srcset="">
+
+
+                </div>
+
+
+                <div class="col-sm-1" style="width:11rem;margin: 0px auto; ">
+
+                    <img src="image/27.jpg" style="width:7rem; margin-left: 20%; background-color: #222222;" alt="" srcset="">
+
+                </div>
+            </div>
+            <br>
+            <div class="row" data-aos="zoom-in">
+                <div class="col-sm-1" style="width:11rem;margin: 0px auto; ">
+
+                    <img src="image/34.jpg" style="width:7rem;background-color: #222222;margin-left: 20%;" alt="" srcset="">
+                </div>
+            </div>
+
+            <br>
+            <div class="row" style="margin-top:5% ;" data-aos="fade-right">
+                <div class="col">
+                    <div id="cell-1">
+                        <div class="row">
+                            <i class="fab fa-google"></i>
+                            <span style="font-size: 1rem; margin-left: 5%; margin-right: 35%; margin-top: 1%; ">www.svit.com</span>
+                            <span class="fas fa-angle-right" id="arrow-right"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="meldh" style="margin-top: 60%;">
+            <div class="row" data-aos="zoom-in">
+                <div class="col" style="   font-size: 1.8rem;" data-aos="fade-right">
+                    Mai em lên đại học
+                </div>
+            </div>
+            <br/>
+            <div class="row" data-aos="zoom-in">
+                <div class="col" style="text-align:center;">
+                    <div style="width:90%;margin: 0px auto; ">
+                        Mai em lên đại học là trang web giúp các bạn học sinh THPT có thể dễ dàng tìm kiếm những trường, cũng như những ngành học thích hợp
+                    </div>
+
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-sm-1" style="width:11rem;margin: 0px auto; ">
+
+                    <img src="image/25.jpg" style="width:7rem;background-color: #222222;margin-left: 20%;" alt="" srcset="">
+
+
+                </div>
+
+
+                <div class="col-sm-1" style="width:11rem;margin: 0px auto; ">
+
+                    <img src="image/27.jpg" style="width:7rem; margin-left: 20%; background-color: #222222;" alt="" srcset="">
+
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-1" style="width:11rem;margin: 0px auto; ">
+
+                    <img src="image/34.jpg" style="width:7rem;background-color: #222222;margin-left: 20%;" alt="" srcset="">
+                </div>
+            </div>
+
+            <br>
+            <div class="row" style="margin-top:5% ;" data-aos="fade-right">
+                <div class="col">
+                    <div id="cell-1">
+                        <div class="row">
+                            <i class="fab fa-google"></i>
+                            <span style="font-size: 1rem; margin-left: 5%; margin-right: 35%; margin-top: 1%; ">www.meldh.com</span>
+                            <span class="fas fa-angle-right" id="arrow-right"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <br/>
+        <br/>
+
+        <div style="text-align: center;">
+            Copyright © Khareer 2022
+        </div>
+
+
+    </div>
+
+
+    <div class="row" style="margin-top:5%;">
+    </div>
+
+
+    </div>
+    <!-- import icon font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <!-- Import thư viện JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // kéo xuống khoảng cách 500px thì xuất hiện nút Top-up
+        var offset = 500;
+        // thời gian di trượt 0.75s ( 1000 = 1s )
+        var duration = 750;
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > offset)
+                    $('#top-up').fadeIn(duration);
+                else
+                    $('#top-up').fadeOut(duration);
+            });
+            $('#top-up').click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, duration);
+            });
+        });
+    </script>
+
+
+
+
+
+    <div title="Về đầu trang" id="top-up">
+        <i class="fas fa-arrow-circle-up"></i></div>
+
+
+    <script>
+        //Load Scoll 
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+</body>
+
+</html>
